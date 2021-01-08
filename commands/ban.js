@@ -1,6 +1,6 @@
 const discord = require("discord.js");
 
-module.exports.run = async (client, message, args) => {
+module.exports.run = async (bot, message, args) => {
 
     // const args = message.content.slice(prefix.length).split(/ +/);
 
