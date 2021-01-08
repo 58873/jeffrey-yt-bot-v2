@@ -165,7 +165,7 @@ bot.on("message", async message => {
 
         var botEmbed = new discord.MessageEmbed()
             .setTitle("✅**Invite**✅")
-            .setDescription("** Hier is een link om de bot te inviten https://discord.com/api/oauth2/authorize?client_id=759780057287491646&permissions=0&scope=bot**")
+            .setDescription("** Hier is een link om de bot te inviten http://bit.ly/3i0tBqH**")
             .setColor("#0000FF")
             .setThumbnail("https://i.scdn.co/image/ab67706c0000bebb12d1a711a79106326fa56b85")  
             .setFooter("© created by JeffreyYT✅#2340", "https://i.scdn.co/image/ab67706c0000bebb12d1a711a79106326fa56b85")
