@@ -1,4 +1,3 @@
-const config = require('../../../config.json');
 const { MessageEmbed } = require('discord.js');
 
 module.exports = class LockCommand extends BaseCommand {
