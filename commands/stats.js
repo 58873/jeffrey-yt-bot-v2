@@ -19,8 +19,8 @@ module.exports.run = async (bot, message, args) => {
       .setTitle("__✅**STATUS**✅__")
       .setColor('#0000FF')
       .addField(':clock4: | **Uptime**', `${uptime}`, true)
-      .addField(':chart_with_downwards_trend: | **Memory Usage**', `${ram} MB`, true)
-      .addField(':page_facing_up: | **Version**', `v${version}`, true)
+      .addField(':chart_with_downwards_trend: | **Memory Gebruik**', `${ram} MB`, true)
+      .addField(':page_facing_up: | **Versie**', `v${version}`, true)
       .setThumbnail("https://i.scdn.co/image/ab67706c0000bebb12d1a711a79106326fa56b85")  
       .setFooter("© created by JeffreyYT✅#2340", "https://i.scdn.co/image/ab67706c0000bebb12d1a711a79106326fa56b85")
       .setTimestamp();    
@@ -31,5 +31,5 @@ module.exports.run = async (bot, message, args) => {
 }
 
 module.exports.help = {
-    name: "stats",
+    name: "status",
 }
