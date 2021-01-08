@@ -2,7 +2,7 @@ module.exports.run = async (bot, message, args) => {
 
     if (!message.member.hasPermission("KICK_MEMBERS")) return message.reply("sorry jij kan dit niet");
 
-    await message.channel.overwritePremissons([
+    await message.channel.overwritePremissions([
 
         {
             id : message.guild.roles.cache.find(r => r.name == "@everyone").id,
