@@ -93,10 +93,9 @@ async function promptMessage(message, author, time, reactions) {
     // We kijken als de reactie juist is, dus met die filter en ook het aantal keren en binnen de tijd.
     // Dan kunnen we bericht terug sturen met dat icoontje dat is aangeduid.
     return message.awaitReactions(filter, { max: 1, time: time }).then(collected => collected.first() && collected.first().emoji.name);
+
 }
 
 module.exports.help = {
-    name: "ban",
-    description: "Ban iemand",
-    category: "Algemeen"
+    name: "kick"
 }
