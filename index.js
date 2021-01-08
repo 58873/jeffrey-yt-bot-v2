@@ -67,7 +67,7 @@ bot.on("ready", async () => {
 
     
 
-    bot.user.setActivity("music",{
+    bot.user.setActivity("updating",{
         type:"STREAMING",
         url:"https://www.twitch.tv/jeffreyyt"
 
