@@ -36,3 +36,6 @@ module.exports = class LockCommand extends BaseCommand {
 
   }
 }
+module.exports.help = {
+    name: "lock",
+}
