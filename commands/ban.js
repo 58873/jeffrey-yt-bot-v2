@@ -2,7 +2,7 @@ const discord = require("discord.js");
 
 module.exports.run = async (client, message, argument) => {
 
-    const args = message.content.slice(prefix.length).split(/ +/);
+    //const args = message.content.slice(prefix.length).split(/ +/);
 
     if (!args[1]) return message.reply("Geen gebruiker opgegeven.");
 
