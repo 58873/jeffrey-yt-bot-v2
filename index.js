@@ -59,19 +59,21 @@ bot.on("ready", async () => {
 
     
 
-    let activities = [`.help`, ` Streaming Music`, `Updating`, `!Help`];
+    let activities = [`Having fun!`, `Music`, `Updating`, `!help`];
     let i = 0;
     setInterval(
       () =>
-        bot.user.setActivity(`${activities[i++ % activities.length]}`, {
-          type: "STREAMING"
+        client.user.setActivity(`${activities[i++ % activities.length]}`, {
+          type: "STREAMING",
+          url:"https://www.twitch.tv/jeffreyyt"
         }),
       15000
     );
-  }
 
-)
+    
+  
 
+})
 
 
 
