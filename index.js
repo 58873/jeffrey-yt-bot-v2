@@ -7,51 +7,6 @@ const activeSongs = new Map();
 const fs = require("fs");
 
 const bot = new discord.Client();
-bot.commands = new discord.Collection();
-
-fs.readdir("./commands/" , (err, files) => {
-
-    if(err) console.log(err);
-
-    var jsFiles = files.filter(f => f.split(".").pop() === "js");
-
-    if(jsFiles.length <=0) {
-        console.log("Kon geen files vinden");
-        return;
-
-    }
-
-    jsFiles.forEach((f, i) => {
-
-        var fileGet = require(`./commands/${f}`);
-        console.log(`De file ${f} is geladen`);
-
-        bot.commands.set(fileGet.help.name, fileGet);
-
-
-
-
-
-
-
-    }) 
-
-
-
-
-
-    
-
-
-
-
-
-
-
-});
-
- 
-
 
 bot.on("ready", async () => {
 
@@ -74,9 +29,6 @@ bot.on("ready", async () => {
   
 
 })
-
-
-
 
 
 bot.on("message", async message => {
@@ -107,11 +59,6 @@ bot.on("message", async message => {
 
     if(commands) commands.run(bot,message, arguments, options);
 
-
-
-
-
-  
     if (command === `${prefix}help`) {
 
         var botEmbed = new discord.MessageEmbed()
