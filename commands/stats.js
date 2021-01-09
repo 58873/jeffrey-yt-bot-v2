@@ -15,7 +15,8 @@ module.exports.run = async (bot, message, args) => {
     }
     let ram = (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)
   let uptime = ` ${days.toFixed()} days\n ${hours.toFixed()} hours\n ${minutes.toFixed()} min\n ${seconds.toFixed()} sec `;
-    const embed = new MessageEmbed()
+    
+  const embed = new MessageEmbed()
       .setTitle("__✅**STATUS**✅__")
       .setColor('#0000FF')
       .addField(':clock4: | **Uptime**', `${uptime}`, true)

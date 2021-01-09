@@ -1,7 +1,7 @@
 {
   "name": "jeffreyyt",
-  "version": "1.0.0",
-  "description": "",
+  "version": "3.1.0",
+  "description": "a good bot",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
