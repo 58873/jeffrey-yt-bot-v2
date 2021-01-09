@@ -53,14 +53,6 @@ fs.readdir("./commands/" , (err, files) => {
  
 
 
-
-
-
-
-
-
-
-
 bot.on("ready", async () => {
 
     console.log(`${bot.user.username} is opgestart.`)
@@ -112,51 +104,35 @@ bot.on("message", async message => {
 
 
   
-
-    
     if (command === `${prefix}help`) {
 
         var botEmbed = new discord.MessageEmbed()
-            .setTitle("✅**help**✅")
-            .setDescription("**De commands zijn als volgt!:** **!help=Geeft alle commands| !info: Laat info zien over de bot| !play=Speelt muziek af| !leave=Laat de bot uit het kanaal gaan|**")
+            .setTitle("help")
+            .setDescription("De commands zijn als volgt!:\n !help=Geeft alle commands| \n!info: Laat info zien over de bot\n| !play=Speelt muziek af|\n !leave=Laat de bot uit het kanaal gaan|")
             .setColor("#0000FF")
-            .setThumbnail("https://i.scdn.co/image/ab67706c0000bebb12d1a711a79106326fa56b85")  
-            .setFooter("© created by JeffreyYT✅#2340", "https://i.scdn.co/image/ab67706c0000bebb12d1a711a79106326fa56b85")
+            .setThumbnail("https://i.scdn.co/image/ab67706c0000bebb12d1a711a79106326fa56b85%22")
+            .setFooter("© created by JeffreyYT#2340", "https://i.scdn.co/image/ab67706c0000bebb12d1a711a79106326fa56b85%22")
             .setTimestamp();
 
 
 
-            
-            
-            
+
+
+
 
         return message.channel.send(botEmbed); 
 
-    };
+            
+
     
+    
+
     
     
   
 
 
-    if (command === `${prefix}info`) {
 
-        var botEmbed = new discord.MessageEmbed()
-            .setTitle("✅Info✅")
-            .setDescription("**Bedankt dat je mij hebt toegevoegd op jou server!! doe ook even !help voor de commands, veel plezier!**")
-            .setColor("#0000FF")
-            .setThumbnail("https://i.scdn.co/image/ab67706c0000bebb12d1a711a79106326fa56b85")
-            .setFooter("© created by JeffreyYT✅#2340", "https://i.scdn.co/image/ab67706c0000bebb12d1a711a79106326fa56b85")
-            .setTimestamp();
-            
-
-
-
-            
-            
-            
-
-        return message.channel.send(botEmbed); 
 
     }
     
@@ -179,7 +155,7 @@ bot.on("message", async message => {
 
         return message.channel.send(botEmbed); 
 
-    }
+    };
 
 
 
