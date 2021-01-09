@@ -63,14 +63,14 @@ bot.on("ready", async () => {
     let i = 0;
     setInterval(
       () =>
-        client.user.setActivity(`${activities[i++ % activities.length]}`, {
+        bot.user.setActivity(`${activities[i++ % activities.length]}`, {
           type: "STREAMING"
         }),
       15000
     );
   }
 
-);
+)
 
 
 
